@@ -210,7 +210,7 @@ a.btn-link:active  {
 /******** About Section ********/
 
 #about {
-	padding-top: 40px;
+    padding-top: 80px;
 	padding-bottom: 40px;
 }
 
@@ -303,7 +303,7 @@ a.btn-link:active  {
 
 
 #portfolio {
-	padding-top: 40px;
+	padding-top: 80px;
 	padding-bottom: 40px;
 	background: #55687C;
 }
@@ -423,7 +423,7 @@ img {
 
 
 #blog {
-	padding-top: 40px;
+	padding-top: 80px;
 	padding-bottom: 40px;
 	background: #f9f9f9;
 }
@@ -477,7 +477,7 @@ img {
 
 
 #contact {
-	padding-top: 40px;
+	padding-top: 80px;
 	padding-bottom: 40px;
 }
 
