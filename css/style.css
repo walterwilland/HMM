@@ -209,7 +209,7 @@ a.btn-link:active {
 /******** About Section ********/
 
 #about {
-    padding-top: 80px;
+    padding-top: 60px;
 	padding-bottom: 40px;
 }
 
@@ -245,6 +245,18 @@ a.btn-link:active {
     user-select: none;    
 }
 
+#about .carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+}
+
+#text-carousel {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
 #about .side-tab:hover {
      cursor: pointer;
 }
@@ -278,6 +290,7 @@ a.btn-link:active {
 
 #about #carousel {
 	margin-top: 30px;
+    margin-bottom: 60px;
 	position: relative;
 	display: block;
 }
@@ -302,7 +315,7 @@ a.btn-link:active {
 
 
 #portfolio {
-	padding-top: 80px;
+	padding-top: 60px;
 	padding-bottom: 40px;
 	background: #55687C;
 }
@@ -364,18 +377,18 @@ a.btn-link:active {
 
 #portfolio .portfolioContainer{
 	margin:0 auto;
-	padding-left:15px;
+	padding-left:1px;
 }
 
 #portfolio .portfolioContainer{
 	max-width: 1140px;
-	min-width: 350px;
+	min-width: 280px;
 }
 
 #portfolio .Portfolio-box {
 	text-align:center;
 	margin-bottom:30px;
-	height:190px;
+	height:225px;
 	width:350px;
 	overflow:hidden;
 	float:left;
@@ -387,10 +400,6 @@ a.btn-link:active {
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;	
-}
-
-#portfolio .Portfolio-box img:hover {
-	opacity: 0.6;
 }
 
 #portfolio .Portfolio-nav li a.current{
@@ -418,10 +427,11 @@ img {
 }
 
 
+
 /******** Blog Section ********/
 
 #blog {
-	padding-top: 80px;
+	padding-top: 60px;
 	padding-bottom: 40px;
 	background: #f9f9f9;
 }
@@ -441,7 +451,7 @@ img {
 
 #blog .carousel .carousel-inner ul {
 	list-style: none;
-	padding: 20px;
+	padding: 5px;
 }
 
 #blog .carousel .carousel-inner .thumbnail {
@@ -589,19 +599,17 @@ input.btn.btn-lg:focus {
     outline: none;
     width: 60%;
     height: 60px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 0;
     border: 1px solid #42a5f6;
-    text-align: left;
+    text-align: center;
     font-size: 1em;
     cursor: auto;
 }
 
 #subscribe button.btn {
-    width: 40%;
+    width: 50%;
     height: 60px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 6px;
     background: #42a5f6;
     outline: none;
     text-transform: uppercase;
