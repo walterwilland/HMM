@@ -28,7 +28,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top shrink" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -38,26 +38,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">HM<span> Massage</span></a>
+                <a class="navbar-brand" href="#mainCarousel">HM<span> Massage</span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#mainCarousel">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="#blog">YouTube</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+                    <li><a href="#mainCarousel">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">YouTube</a></li>
+                    <li><a href="#portfolio">Instagram</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -70,13 +60,13 @@
     	.navbar-default {
     		background-color: transparent;
     		border-color: transparent;
-    		-webkit-transition: all 0.8s ease 0s;
-  			-o-transition: all 0.8s ease 0s;
-  			transition: all 0.8s ease 0s;
+    		-webkit-transition: all 0.5s ease 0s;
+  			-o-transition: all 0.5s ease 0s;
+  			transition: all 0.5s ease 0s;
     	}
     	
     	.navbar-nav { 
-    		margin-top: ;
+    		margin-top: 0px;
     		float: right;
             -webkit-transition: all 0.5s ease 0s;
   			-o-transition: all 0.5s ease 0s;
@@ -88,17 +78,18 @@
     		float: none;
     		text-align: center;
     		background: rgba(25, 33, 60, 0.5);
-    	}}
+    	}
+    	}
     	
     	.navbar-default .navbar-brand {
-    		margin-top: 20;
+    		margin-top: 0px;
     		font-size: 28px;
-    		font-family: 'Roboto', serif;
+    		font-family: 'Roboto Slab', serif;
     		color: #fff;
     		letter-spacing: 1px;
-    		-moz-transition:color .5s ease-in;
-   			-o-transition:color .5s ease-in;
-    		-webkit-transition:color .5s ease-in;
+    		-webkit-transition: all 0.5s ease 0s;
+  			-o-transition: all 0.5s ease 0s;
+  			transition: all 0.5s ease 0s;
     	}
     	
     	.navbar-default .navbar-brand span {
@@ -114,7 +105,7 @@
     	}
     	}
     	
-    	.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand span:hover {
+    	.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand span:hover {
     		color: #3D99B8;
     	}
     	
@@ -135,7 +126,7 @@
     	}
     	
     	.navbar-default .navbar-toggle {
-    		margin-top: ;
+    		margin-top: 0px;
     		border: none;
     	}
     	
@@ -154,18 +145,17 @@
 		}
 		
 		.navbar-default.shrink .navbar-nav {
-			margin-top: 20px;
-			margin-bottom: ;
+			margin-top: 0px;
+			margin-bottom: 0px;
 		}
 		
 		.navbar-default.shrink .navbar-brand {
-			margin-top: 15px;
+			margin-top: 0px;
 		}
 		
 		.navbar-default.shrink .navbar-toggle {
-			margin-top: 20px;
+			margin-top: 5px;
 		}
-
     
     </style>
 
@@ -287,41 +277,10 @@
         </div>
     </div>
     
-    
-    <div id="portfolio">
-    	<div class="container">
-    		<a href="https://www.instagram.com/hm_massage/?hl=en" class="btn-link" target="_blank"><h2>Instagram</h2></a>
-    		<p>Screenshots from HM Massage Instagram</p>
-    		<hr>
-    	</div>
-    	
-       		<div class="portfolioContainer">
-            	<div class=" Portfolio-box">
-                	<img src="images/gallery1.jpg" alt="">	
-                </div>
-                <div class="Portfolio-box">
-                	<img src="images/gallery2.jpg" alt="">	
-                </div>
-                <div class=" Portfolio-box">
-                	<img src="images/gallery3.jpg" alt="">	
-                </div>
-                <div class=" Portfolio-box" >
-                	<img src="images/gallery4.jpg" alt="">	
-                </div>
-                <div class=" Portfolio-box">
-                	<img src="images/gallery5.jpg" alt="">	
-                </div>
-                <div class=" Portfolio-box">
-                	<img src="images/gallery6.jpg" alt="">	
-                </div>
-    		</div>
-    	
-    </div>
-    
-    
+    <!-- Youtube -->
     <div id="blog">
     	<div class="container">
-    		<a href="https://www.youtube.com/channel/UCzo0tuJ8RVPpHiaS5LPwa1Q" class="btn-link" target="_blank"><h2>HM Massage <span>YouTube</span></h2></a>
+    		<a href="https://www.youtube.com/channel/UCzo0tuJ8RVPpHiaS5LPwa1Q" class="header" target="_blank"><h2>HM Massage <span>YouTube</span></h2></a>
     		<hr>
     		<div class="carousel slide" id="myCarousel">
         		<div class="carousel-inner">
@@ -367,14 +326,37 @@
     	</div>
     </div>
     
+    <!-- Instagram -->
+    <div id="portfolio">
+    	<div class="container">
+    		<a href="https://www.instagram.com/hm_massage/?hl=en" class="btn-link" target="_blank"><h2>Instagram</h2></a>
+    		<p>Screenshots from HM Massage Instagram</p>
+    		<hr>
+    	</div>
+    	
+       	<div class="container">
+            <div class=" col-sm-4" style="margin-bottom: 20px;">
+            	<img src="images/gallery4.jpg" alt="">	
+            </div>
+            <div class="col-sm-4" style="margin-bottom: 20px;">
+            	<img src="images/gallery5.jpg" alt="">	
+            </div>
+            <div class="col-sm-4" style="margin-bottom: 20px;">
+            	<img src="images/gallery6.jpg" alt="">	
+            </div>
+    	</div>
+    </div>
     
+    
+    
+    <!-- Contact -->
     <div id="contact">
     	<div class="container">
     		<h2>Contact</h2>  
     		<p>Have a question, message me about it.</p>
     		<div class="col-md-6">
     			<div class="contact-form">
-					<form action="mailto:spenceharwood@yahoo.com?subject=HM Massage" method="GET">
+					<form action="mailto:spenceharwood@yahoo.com" method="GET">
 						<input id="name" name="subject" type="text" placeholder="Subject" required>
 						<textarea id="message" name= "body" placeholder="Your Message:" rows="5" required></textarea>
 						<br>
@@ -389,15 +371,20 @@
 			</div>
     	</div>   	
     	
-		<iframe width="100%;" height="400" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" style="pointer-events: none; margin-top: 30px;" src="https://www.google.com/maps/embed/v1/place?q=1717%20w%206th%20ave%20Spokane&key=AIzaSyDwx_5qHCH1l1Wl8imKzBpGMbXuv7oOmfs"></iframe>
-		
+        <!-- Google Maps -->
+		<div id="map"></div>
+        <div class="container">
+            <button class="btn btn-hero btn-lg" role="button" >
+                    <a href="https://www.google.com/maps/place/1717+W+6th+Ave,+Spokane,+WA+99204/@47.6501063,-117.4404172,17z/data=!3m1!4b1!4m5!3m4!1s0x549e186c7e9cf4f7:0x987813901c1ca6e2!8m2!3d47.6501063!4d-117.4382285" class="btn btn-info btn-link" target="_blank">Get Directions</a>
+            </button>
+        </div>
     </div>
     
     <div id="subscribe">
     	<div class="container">
     	    <h2>Subscribe</h2>
     	    <p>Join our newsletter to recieve updates on growth and development as well as coupons or discount codes.</p>
-			<div class="col-md-8 col-md-offset-2">
+			<div>
              	<form action="https://github.us12.list-manage.com/subscribe/post?u=8f5f81429f630b4d64f3c42d1&amp;id=a39a6983e1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               		<div class="" id="mc_embed_signup_scroll">
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8f5f81429f630b4d64f3c42d1_a39a6983e1" tabindex="-1" value=""></div>
@@ -509,6 +496,22 @@
 
 	</script>
 	
+    <!-- Google Maps Scripts -->
+	<script>
+      function initMap() {
+        var uluru = {lat: 47.650338, lng: -117.438239};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        }); 
+      }
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU0QTH6j8Ei4UjMV93pT4E00FCu7kk3uc&callback=initMap"></script>
 	
 	<!-- Scroll To Top Settings -->
     <script type="text/javascript">
