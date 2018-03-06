@@ -122,24 +122,28 @@ body {
     border: 1px solid #0781E6; 
 }
 
-/******** Booking Button ********/
+/******** Remove <a> Link Text Decoration ********/
 
 a.btn-link:link {
   text-decoration: none;
   font-weight: bold;
-  } 
+  color: #fff;
+} 
+
 a.btn-link:visited {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
-  } 
+}
+
 a.btn-link:hover {
   text-decoration: none;
-  color: #337ab7;
-  } 
+  color: #fff;
+}
+
 a.btn-link:active {
-  text-decoration:  none;
-  font-weight:      bold;
+  text-decoration: none;
+  font-weight: bold;
   color: #fff; 
 } 
 
@@ -210,7 +214,7 @@ a.btn-link:active {
 
 #about {
     padding-top: 60px;
-	padding-bottom: 40px;
+	padding-bottom: 0;
 }
 
 #about .text h2 {
@@ -226,10 +230,6 @@ a.btn-link:active {
 	text-align: left;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
-}
-
-#about .panel-group {
-	margin-top: 30px;
 }
 
 #about .panel-heading:hover {
@@ -341,40 +341,6 @@ a.btn-link:active {
 	color: #fff;
 }
 
-#portfolio .Portfolio-nav {
-	padding:0;
-	margin:60px 0 45px 0;
-	list-style:none;
-	text-align:center;
-}
-
-#portfolio .Portfolio-nav li {
-	margin:0 10px;
-	display:inline;
-}
-
-#portfolio .Portfolio-nav li a {
-	display:inline-block;
-	padding:10px 22px;
-	font-size:12px;
-	line-height:20px;
-	color:#222222;
-	border-radius:4px;
-	text-transform:uppercase;
-	font-family: 'Montserrat', sans-serif;
-	background:#f7f7f7;
-	margin-bottom:5px;
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
-}
-
-#portfolio .Portfolio-nav li a:hover {
-	background:#42a5f6;
-	color:#fff;
-	text-decoration:none;
-}
-
 #portfolio .portfolioContainer{
 	margin:0 auto;
 	padding-left:1px;
@@ -387,7 +353,7 @@ a.btn-link:active {
 
 #portfolio .Portfolio-box {
 	text-align:center;
-	margin-bottom:30px;
+	margin-bottom:5px;
 	height:225px;
 	width:350px;
 	overflow:hidden;
@@ -483,7 +449,7 @@ img {
 
 
 #contact {
-	padding-top: 80px;
+	padding-top: 60px;
 	padding-bottom: 40px;
 }
 
