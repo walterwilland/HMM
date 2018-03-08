@@ -169,6 +169,7 @@ button.btn {width: 100%;}
 @media screen and (max-width: 400px) {
 #mainCarousel .hero h1 {font-size: 40px;}
 #mainCarousel .hero h3 {font-size: 16px;}
+#portfolio h2 {font-size: 20px !important;}
 button.btn {width: 100%;}
 #contact button.btn{position: static !important;}
 #subscribe {position: static !important;}
@@ -266,15 +267,6 @@ button.btn {width: 100%;}
 	font-family: 'PT Sans', sans-serif;
 }     
 
-#about #carousel {
-	margin-top: 10px;
-    margin-bottom: 20px;
-	position: center;
-	display: block;
-}
-
-#about #carousel .item img {width: 100%;}
-
 .center {text-align: center;}
 
 .circle {
@@ -287,7 +279,6 @@ button.btn {width: 100%;}
 
 /******** Portfolio Section ********/
 
-
 #portfolio {
 	padding-top: 60px;
 	padding-bottom: 40px;
@@ -297,17 +288,21 @@ button.btn {width: 100%;}
 #portfolio h2 {
 	font-size: 28px;
 	text-transform: uppercase;
-	font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
 	letter-spacing: 1px;
 	font-weight: 600;
 	color: #fff;
-	border-bottom: 8px solid #42a5f6;
-    display: inline-block;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    padding-right: 75px;
-    line-height: 40px;
+	border: 2px solid #42a5f6;
+    display: table;
+    margin: 10px auto;
+    padding: 10px 8px 10px 9px;
 }
+
+#youtube {
+    text-decoration: none;
+}
+
 
 #portfolio span{color:lightskyblue;}
 
@@ -317,28 +312,6 @@ button.btn {width: 100%;}
 	font-family: 'PT Sans', sans-serif;
 	font-size: 17px;
 	color: #fff;
-}
-
-#portfolio .portfolioContainer{
-	margin:0 auto;
-	padding-left:1px;
-}
-
-#portfolio .Portfolio-box {
-	text-align:center;
-	margin-bottom:5px;
-	height:225px;
-	width:350px;
-	overflow:hidden;
-	float:left;
-	padding:0;
-}
-
-#portfolio .Portfolio-box img{
-	margin-bottom:25px;
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;	
 }
 
 #portfolio .Portfolio-nav li a.current{
@@ -380,42 +353,21 @@ img {max-width:100%;}
     font-size: 28px;
 	text-transform: uppercase;
 	font-family: 'Noto Sans', sans-serif;
-	letter-spacing: 1px;
+	border: 2px solid #42a5f6;
+    color: black;
+    letter-spacing: 1px;
+    padding: 10px;
 	font-weight: 600;
-	text-align: center;
+    display: table;
+    margin: 10px auto;
 }
 
-#blog a:hover {
-    text-decoration: none;
-    color: #42a5f6;
-}
+#blog a:hover {text-decoration: none;}
+#blog a:visited {text-decoration: none;}
+#blog a:active {text-decoration: none;}
+#blog a:link {text-decoration: none;}
 
 #blog p {text-align: center;}
-
-#blog .carousel .carousel-inner ul {
-	list-style: none;
-	padding: 5px;
-}
-
-#blog .carousel .carousel-inner .thumbnail {
-	border: none;
-	padding: 0px;
-}
-
-#blog .carousel .carousel-inner .caption h4 {
-	font-size: 1.125em;
-	text-transform: uppercase;
-}
-
-#blog .carousel .carousel-inner .caption .btn {
-	padding: 0px;
-	font-size: 1em;
-}
-
-#blog .pager li a {
-	background: #42a5f6;
-	color: #fff;
-}
 
 #blog img{width: 100%;}
 
