@@ -132,9 +132,7 @@ a.btn-link:active {
   color: #fff; 
 } 
 
-a.header:hover{
-    text-decoration: none;
-}
+
 
 /******** Media Queries ********/
 
@@ -164,12 +162,16 @@ a.header:hover{
 #mainCarousel .hero h1 {font-size: 45px;}
 #mainCarousel .hero h3 {font-size: 18px;}
 button.btn {width: 100%;}
+#contact button.btn{position: static !important;}
+#subscribe {position: static !important;}
 }
 
 @media screen and (max-width: 400px) {
 #mainCarousel .hero h1 {font-size: 40px;}
 #mainCarousel .hero h3 {font-size: 16px;}
 button.btn {width: 100%;}
+#contact button.btn{position: static !important;}
+#subscribe {position: static !important;}
 }
 
 
@@ -212,13 +214,29 @@ button.btn {width: 100%;}
     align-items:center;
 }
 
+#about .panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+
+#about .panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
 #text-carousel {
   width: 100%;
   height: auto;
   padding: 50px;
 }
 
+#about .collapse div {position:fixed;}
+
 #about .side-tab:hover {cursor: pointer;}
+#about span:hover{cursor: pointer;}
     
 #about .panel.panel-default {
      border: none;
@@ -244,13 +262,14 @@ button.btn {width: 100%;}
 #about .panel-body {
 	border-right: 1px solid #2469A2;
 	border-left: 1px solid #2469A2;
+    border-bottom: 1px solid #2469A2;
 	font-family: 'PT Sans', sans-serif;
 }     
 
 #about #carousel {
-	margin-top: 30px;
-    margin-bottom: 60px;
-	position: relative;
+	margin-top: 10px;
+    margin-bottom: 20px;
+	position: center;
 	display: block;
 }
 
@@ -290,6 +309,10 @@ button.btn {width: 100%;}
     line-height: 40px;
 }
 
+#portfolio span{color:lightskyblue;}
+
+#portfolio h4{color:azure;}
+
 #portfolio p {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 17px;
@@ -299,11 +322,6 @@ button.btn {width: 100%;}
 #portfolio .portfolioContainer{
 	margin:0 auto;
 	padding-left:1px;
-}
-
-#portfolio .portfolioContainer{
-	max-width: 1140px;
-	min-width: 280px;
 }
 
 #portfolio .Portfolio-box {
@@ -328,6 +346,8 @@ button.btn {width: 100%;}
 	color:#fff;
 	text-decoration:none;
 }
+
+#portfolio img {width: 100%;}
 
 img {max-width:100%;}
 
@@ -357,7 +377,7 @@ img {max-width:100%;}
 }
 
 #blog h2 {
-	font-size: 28px;
+    font-size: 28px;
 	text-transform: uppercase;
 	font-family: 'Noto Sans', sans-serif;
 	letter-spacing: 1px;
@@ -365,7 +385,12 @@ img {max-width:100%;}
 	text-align: center;
 }
 
-#blog h2 span {color: #42a5f6;}
+#blog a:hover {
+    text-decoration: none;
+    color: #42a5f6;
+}
+
+#blog p {text-align: center;}
 
 #blog .carousel .carousel-inner ul {
 	list-style: none;
@@ -376,8 +401,6 @@ img {max-width:100%;}
 	border: none;
 	padding: 0px;
 }
-
-#blog .carousel .carousel-inner .thumbnail img {width: 100%;}
 
 #blog .carousel .carousel-inner .caption h4 {
 	font-size: 1.125em;
@@ -393,6 +416,8 @@ img {max-width:100%;}
 	background: #42a5f6;
 	color: #fff;
 }
+
+#blog img{width: 100%;}
 
 
 /******** Contact Section ********/
@@ -484,6 +509,8 @@ img {max-width:100%;}
     background: #42a5f6;
     outline: none;
     text-transform: uppercase;
+    position: relative;
+    top: -80px;    
 }
 
 
@@ -491,8 +518,9 @@ img {max-width:100%;}
 /******** Subscribe Section ********/
 
 #subscribe {
-	padding-top: 10px;
 	padding-bottom: 10px;
+    position: relative;
+    top: -60px;
 }
 
 #subscribe h2 {
