@@ -215,26 +215,11 @@ button.btn {width: 100%;}
     align-items:center;
 }
 
-#about .panel-heading .accordion-toggle:after {
-    /* symbol for "opening" panels */
-    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
-    float: right;        /* adjust as needed */
-    color: grey;         /* adjust as needed */
-}
-
-#about .panel-heading .accordion-toggle.collapsed:after {
-    /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
-}
-
 #text-carousel {
   width: 100%;
   height: auto;
   padding: 50px;
 }
-
-#about .collapse div {position:fixed;}
 
 #about .side-tab:hover {cursor: pointer;}
 #about span:hover{cursor: pointer;}
@@ -266,6 +251,18 @@ button.btn {width: 100%;}
     border-bottom: 1px solid #2469A2;
 	font-family: 'PT Sans', sans-serif;
 }     
+
+.panel-heading.collapsed .fa-chevron-down, .panel-heading .fa-chevron-right {display: none;}
+.panel-heading.collapsed .fa-chevron-right, .panel-heading .fa-chevron-down {display: inline-block;}
+
+i.fa {
+    cursor: pointer;
+    margin-right: 5px;
+    position: relative;
+    top: -5px;
+}
+
+.collapsed ~ .panel-body {padding: 0;}
 
 .center {text-align: center;}
 
