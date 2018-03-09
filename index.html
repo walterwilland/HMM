@@ -239,28 +239,28 @@
                     <div class="panel-body">          
    		                <div id="mode" class="panel-heading collapsed" data-target="#mode1" data-toggle="collapse" style="margin-bottom: 10px; background: none; color: black;">
    		                    <i class="fa fa-fw fa-chevron-down"></i>
-                            <i class="fa fa-fw fa-chevron-right"></i><h2 style="display: inline;">Swedish Massage</h2>
+                            <i class="fa fa-fw fa-chevron-right"></i><h3 style="display: inline;">Swedish Massage</h3>
    		                </div>
    		                <div id="mode1" class="collapse">
                             <p>A great place to start if you're new to massage as this is the most famous modality in the West. Swedish massage utilizes many different techniques, mostly of a lighter nature, all rolled into one session. These techniques include long gliding strokes, rhythmic vibration or gentle lifting and squeezing of the tissues. And while primarily aimed toward relaxation it can also help to increase blood flow, revitalize stiff muscles and reduce pain.</p>
    		                </div>
    		                <div class="panel-heading collapsed" data-target="#mode2" data-toggle="collapse" style="margin-bottom: 10px; background: none; color: black;">
    		                    <i class="fa fa-fw fa-chevron-down"></i>
-                            <i class="fa fa-fw fa-chevron-right"></i><h2 style="display: inline;">Deep Tissue</h2>
+                            <i class="fa fa-fw fa-chevron-right"></i><h3 style="display: inline;">Deep Tissue</h3>
    		                </div>
    		                <div id="mode2" class="collapse">
                             <p>An excellent modality for chronic pain and tension or for deeply embedded 'knots'. Very similar to Swedish however it goes further into the body, targeting deep muscles, tendons and fascia. The goal of deep tissue is to find and eliminate the source of the pain as opposed to the symptoms. Deep tissue however can be painful mid-session but eliminating the deep knots can lead to long-term relief lasting weeks after the session.  </p>
    		                </div>
    		                <div class="panel-heading collapsed" data-target="#mode3" data-toggle="collapse" style="margin-bottom: 10px; background: none; color: black;">
    		                    <i class="fa fa-fw fa-chevron-down"></i>
-                            <i class="fa fa-fw fa-chevron-right"></i><h2 style="display: inline;">Cupping</h2>
+                            <i class="fa fa-fw fa-chevron-right"></i><h3 style="display: inline;">Cupping</h3>
    		                </div>
    		                <div id="mode3" class="collapse">
                             <p>An Ancient form of therapy that's just now arriving to the West. Cupping utilizes suction instead of compression to increase circulation and flexibility, remove adhesions and promote relaxation. It does so by placing special cups on the skin that can pull tissues up to 4 inches into the body. As a note, it leaves behind red circles on your skin that can last 5-7 days so keep that in mind when thinking of cupping.</p>
    		                </div>
                         <div class="panel-heading collapsed" href="#mode4" data-toggle="collapse" style="background: none; color: black;">
                             <i class="fa fa-fw fa-chevron-down"></i>
-                            <i class="fa fa-fw fa-chevron-right"></i><h2 style="display: inline;">Thermotherapy</h2>
+                            <i class="fa fa-fw fa-chevron-right"></i><h3 style="display: inline;">Thermotherapy</h3>
                         </div>
    		                <div id="mode4" class="collapse">
                             <p>Thermotherapy or 'heat therapy' is the use of heat in the massage. The heat feels amazing and can be used to increase relaxation and further reduce pain. It can be presented as hot towels, heating pads or heat baths. While not listed under 'heat', Ice can also be used in session to reduce inflammation and stop pain, especially around joints and other compact areas of the body.</p>
@@ -328,34 +328,35 @@
     
     
     <!-- Contact -->
-    <div id="contact">
+    <div id="contact" style="display: none;">
     	<div class="container">
     		<h2>Contact</h2>  
     		<p>Have a question, message me about it.</p>
-    		<div class="col-md-6">
+    		<div class="">
     			<div class="contact-form">
 					<form action="mailto:spenceharwood@yahoo.com" method="GET">
 						<input id="name" name="subject" type="text" placeholder="Subject" required>
 						<textarea id="message" name= "body" placeholder="Your Message:" rows="5" required></textarea>
 						<br>
-                        <button id="submit" type="submit" value="Send" data-target="_top">Send Message</button>
+                        <button id="submit" type="submit" value="Send" form-target="_top">Send Message</button>
 					</form>
 				</div>  
-			</div>	
-			<div class="col-md-6">
-				<div class="image">
-					<img src="images/locale.jpg" class="img-responsive">
-				</div>
+			</div>
+			<div class="">
+				
 			</div>
     	</div>   	
-    	
-        <!-- Google Maps -->
-		<div id="map"></div>
-        <div class="container">
-            <button class="btn btn-hero btn-lg" role="button" >
-                    <a href="https://www.google.com/maps/place/1717+W+6th+Ave,+Spokane,+WA+99204/@47.6501063,-117.4404172,17z/data=!3m1!4b1!4m5!3m4!1s0x549e186c7e9cf4f7:0x987813901c1ca6e2!8m2!3d47.6501063!4d-117.4382285" class="btn btn-info btn-link" target="_blank">Get Directions</a>
-            </button>
-        </div>
+    </div>
+    
+    <!-- Google Maps -->
+    <img src="images/locale.jpg" class="">
+    
+    <div id="map"></div>
+    
+    <div id="directions" class="container">
+        <button class="btn btn-hero btn-lg" role="button" >
+            <a href="https://www.google.com/maps/place/1717+W+6th+Ave,+Spokane,+WA+99204/@47.6501063,-117.4404172,17z/data=!3m1!4b1!4m5!3m4!1s0x549e186c7e9cf4f7:0x987813901c1ca6e2!8m2!3d47.6501063!4d-117.4382285" class="btn btn-info btn-link" target="_blank">Get Directions</a>
+        </button>
     </div>
     
     <!-- Subscribe -->

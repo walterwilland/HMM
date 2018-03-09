@@ -162,7 +162,8 @@ a.btn-link:active {
 #mainCarousel .hero h1 {font-size: 45px;}
 #mainCarousel .hero h3 {font-size: 18px;}
 button.btn {width: 100%;}
-#contact button.btn{position: static !important;}
+#directions button.btn{position: static !important;}
+#contact {display: block !important;}
 #subscribe {position: static !important;}
 }
 
@@ -171,7 +172,9 @@ button.btn {width: 100%;}
 #mainCarousel .hero h3 {font-size: 16px;}
 #portfolio h2 {font-size: 20px !important;}
 button.btn {width: 100%;}
-#contact button.btn{position: static !important;}
+#about h3 {font-size: 13px !important; font-weight: bold;}
+#directions button.btn{position: static !important;}
+#contact {display: block !important;}
 #subscribe {position: static !important;}
 }
 
@@ -190,6 +193,11 @@ button.btn {width: 100%;}
 	letter-spacing: 1px;
 	font-weight: 600;
 	text-align: center;
+}
+
+#about h3 {
+    display: inline;
+    font-size: 20px;
 }
 
 #about .text p {
@@ -258,8 +266,6 @@ button.btn {width: 100%;}
 i.fa {
     cursor: pointer;
     margin-right: 5px;
-    position: relative;
-    top: -5px;
 }
 
 .collapsed ~ .panel-body {padding: 0;}
@@ -452,7 +458,7 @@ img {max-width:100%;}
     background-color: lightgray;
 }
 
-#contact button.btn {
+#directions button.btn {
     margin-top: 15px;
     border-radius: 8px;
     background: #42a5f6;
