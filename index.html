@@ -47,7 +47,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">YouTube</a></li>
                     <li><a href="#blog">Instagram</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Facebook</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -118,17 +118,34 @@
     		letter-spacing: 1px;
     	}
     	
+        .navbar-default .navbar-nav>li>a:active {
+            border: 1px solid #42a5f6;
+            margin-top: 8px;
+            margin-left: 0px;
+            padding: 5px;
+            -webkit-transition: border 0.5s ease-in;
+  			-o-transition: border 0.5s ease-in;
+  			transition: border 0.5s ease-in;
+        }
+        
     	.navbar-default .navbar-nav>li>a:hover {
-    		color: #42a5f6;
+    		color: deepskyblue;
     	}
     	
     	.navbar-default .navbar-nav>li>a:focus {
-    		color: #42a5f6;
-    	}
+    		color: deepskyblue;
+            border: 1px solid #42a5f6;
+            margin-top: 8px;
+            margin-left: 0px;
+            padding: 5px;
+            -webkit-transition: border 0.5s ease-in;
+  			-o-transition: border 0.5s ease-in;
+  			transition: border 0.5s ease-in;
+        }
     	
     	.navbar-default .navbar-toggle {
     		margin-top: 6px;
-    		border: none;
+            border: none;
     	}
     	
 		.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -327,36 +344,28 @@
     
     
     
-    <!-- Contact -->
-    <div id="contact" style="display: none;">
+    <!-- Facebook -->
+    <div id="contact">
     	<div class="container">
-    		<h2>Contact</h2>  
-    		<p>Have a question, message me about it.</p>
-    		<div class="">
-    			<div class="contact-form">
-					<form action="mailto:spenceharwood@yahoo.com" method="GET">
-						<input id="name" name="subject" type="text" placeholder="Subject" required>
-						<textarea id="message" name= "body" placeholder="Your Message:" rows="5" required></textarea>
-						<br>
-                        <button id="submit" type="submit" value="Send" form-target="_top">Send Message</button>
-					</form>
-				</div>  
-			</div>
-			<div class="">
-				
-			</div>
+            <a href="https://www.facebook.com/OfficialHMM/"><h2>Facebook</h2></a>  
+    		<p style="text-align: center;">Have a question, message me about it on Facebook</p>
+    		<hr>
     	</div>   	
     </div>
     
     <!-- Google Maps -->
-    <img src="images/locale.jpg" class="">
+    <div id="google">
+        <div class="container"><h3 class="local">- Located at 1717 West 6th Avenue in Spokane Washington -</h3></div>
+        <div id="map"></div>
     
-    <div id="map"></div>
+        <div id="directions" class="container">
+            <button class="btn btn-hero btn-lg" role="button" >
+                <a href="https://www.google.com/maps/place/1717+W+6th+Ave,+Spokane,+WA+99204/@47.6501063,-117.4404172,17z/data=!3m1!4b1!4m5!3m4!1s0x549e186c7e9cf4f7:0x987813901c1ca6e2!8m2!3d47.6501063!4d-117.4382285" class="btn btn-info btn-link" target="_blank">Get Directions</a>
+            </button>
+        </div>
     
-    <div id="directions" class="container">
-        <button class="btn btn-hero btn-lg" role="button" >
-            <a href="https://www.google.com/maps/place/1717+W+6th+Ave,+Spokane,+WA+99204/@47.6501063,-117.4404172,17z/data=!3m1!4b1!4m5!3m4!1s0x549e186c7e9cf4f7:0x987813901c1ca6e2!8m2!3d47.6501063!4d-117.4382285" class="btn btn-info btn-link" target="_blank">Get Directions</a>
-        </button>
+        <div id="local" class="container fill" style="background-image: url(images/locale1.jpg); height:200px; margin-top: 20px;"></div>
+    
     </div>
     
     <!-- Subscribe -->
@@ -387,6 +396,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.isotope.js"></script>
+    <script src="js/jquery.bcSwipe.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     
     
@@ -422,7 +432,12 @@
     	}
 	});
 
-	</script>    
+	</script>  
+	
+    <!-- Swipe Carousel on Mobile -->
+    <script>
+      $('.carousel').bcSwipe({ threshold: 50 });
+    </script>
 
 
 	<!-- Portfolio Isotope Settings -->
@@ -471,7 +486,6 @@
 	});
 
 	</script>
-	
    
     <!-- Google Maps Scripts -->
 	<script>
