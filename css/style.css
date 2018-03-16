@@ -164,6 +164,7 @@ a.btn-link:active {
 button.btn {width: 100%;}
 #google h3 {font-size: 18px;}
 #directions button.btn{position: static !important;}
+#about h3 {font-size: 18px !important; font-weight: bold;}
 #local {position: static !important;}
 #contact {display: block !important;}
 #subscribe {position: static !important;}
@@ -175,7 +176,7 @@ button.btn {width: 100%;}
 #portfolio h2 {font-size: 20px !important;}
 button.btn {width: 100%;}
 #google h3 {font-size: 16px;}
-#about h3 {font-size: 13px !important; font-weight: bold;}
+#about h3 {font-size: 16px !important; font-weight: bold;}
 #directions button.btn{position: static !important;}
 #local {position: static !important;}
 #contact {display: block !important;}
