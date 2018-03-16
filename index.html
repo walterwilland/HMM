@@ -45,7 +45,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">YouTube</a></li>
-                    <li><a href="#blog">Instagram</a></li>
+                    <li><a href="#blog">Instagram &amp; Facebook</a></li>
                     <li><a href="#google">Location</a></li>
                 </ul>
             </div>
@@ -173,7 +173,7 @@
     </style>
 
     <!-- Image Background Carousel Header -->
-    <header id="mainCarousel" class="carousel slide">
+    <header id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="12000">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
@@ -335,9 +335,9 @@
             <div class="col-md-4" style="margin-bottom: 30px;">
         	    <img src="images/gallery6.jpg" alt="">	
             </div>
-            
+
+            <p style="text-align: center;"><i>Have a question, message me about it on Facebook</i></p>    
             <a href="https://www.facebook.com/OfficialHMM/"><h2>Facebook</h2></a>  
-    		<p style="text-align: center;">Have a question, message me about it on Facebook</p>
         </div>
     </div>
     
@@ -354,6 +354,10 @@
     
         <div id="local" class="container fill" style="background-image: url(images/locale1.jpg); height:200px; margin-top: 20px;"></div>
     </div>
+    
+    <section id="google-map">
+				<div id="map-canvas"></div>
+			</section>
     
     
     <!-- Subscribe -->
@@ -439,9 +443,7 @@
    
    
     <!-- Swipe Carousel on Mobile -->
-    <script>
-      $('.carousel').bcSwipe({ threshold: 50 });
-    </script>
+    <script>$('.carousel').bcSwipe({ threshold: 50 });</script>
 
 
 	<!-- Portfolio Isotope Settings -->
@@ -497,17 +499,69 @@
       function initMap() {
         var uluru = {lat: 47.650338, lng: -117.438239};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: uluru
+          zoom: 14.2,
+          center: uluru,
+        
+            styles: [{
+            featureType: 'water',
+            stylers: [{
+                color: '#46bcec'
+            }, {
+                visibility: 'on'
+            }]
+        }, {
+            featureType: 'landscape',
+            stylers: [{
+                color: '#efefef'
+            }]
+        }, {
+            featureType: 'road',
+            stylers: [{
+                saturation: -10
+            }, {
+                lightness: 10
+            }]
+        }, {
+            featureType: 'road.highway',
+            elementType: 'geometry.stroke',
+            stylers: [{
+                color: "#ffc200"
+            }]
+        }, {
+            featureType: 'road.arterial',
+            elementType: 'labels.icon',
+            stylers: [{
+                visibility: 'on'
+            }]
+        }, {
+            featureType: 'administrative',
+            elementType: 'labels.text.fill',
+            stylers: [{
+                color: '#444444'
+            }]
+        }, {
+            featureType: 'transit',
+            stylers: [{
+                visibility: 'off'
+            }]
+        }, {
+            featureType: 'poi',
+            stylers: [{
+                visibility: 'off'
+            }]
+        }]
         });
+        
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        }); 
+            position: uluru,
+            map: map,
+            icon: 'images/map-marker.png',
+        });
       }
+        
     </script>
     
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU0QTH6j8Ei4UjMV93pT4E00FCu7kk3uc&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU0QTH6j8Ei4UjMV93pT4E00FCu7kk3uc&callback=initMap"></script>   
 	
 	
 	<!-- Scroll To Top Settings -->
