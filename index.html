@@ -30,9 +30,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -40,13 +40,12 @@
                 </button>
                 <a class="navbar-brand" href="#mainCarousel">HM<span> Massage</span></a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <div class="collapse navbar-collapse" id="main-navigation">
                 <ul class="nav navbar-nav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">YouTube</a></li>
                     <li><a href="#blog">Instagram</a></li>
-                    <li><a href="#contact">Facebook</a></li>
                     <li><a href="#google">Location</a></li>
                 </ul>
             </div>
@@ -243,6 +242,7 @@
 
                 <div class="container" id="accordion" role="tablist" aria-multiselectable="true">
                 
+                <!-- Modalities -->
                 <div class="panel panel-default">
                     <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
                         <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -320,7 +320,7 @@
     </div>
 
     
-    <!-- Instagram -->
+    <!-- Instagram & Facebook -->
     <div id="blog">
     	<div class="container">
     		<a href="https://www.instagram.com/hm_massage/?hl=en"><h2>Instagram</h2></a>
@@ -335,19 +335,11 @@
             <div class="col-md-4" style="margin-bottom: 30px;">
         	    <img src="images/gallery6.jpg" alt="">	
             </div>
-        </div>
-    </div>
-    
-    
-    <!-- Facebook -->
-    <div id="contact">
-    	<div class="container">
+            
             <a href="https://www.facebook.com/OfficialHMM/"><h2>Facebook</h2></a>  
     		<p style="text-align: center;">Have a question, message me about it on Facebook</p>
-    		<hr>
-    	</div>   	
+        </div>
     </div>
-    
     
     <!-- Google Maps -->
     <div id="google">
@@ -430,6 +422,22 @@
 
 	</script>  
 	
+   
+    <!-- Close Toggle Nav on Any Click -->
+    <script>
+        $(document).on('click', function (e){
+            var menu_opened = $('#main-navigation').hasClass('in');
+  
+        if(!$(e.target).closest('#main-navigation').length &&
+            !$(e.target).is('#main-navigation') &&
+            menu_opened === true){
+                $('#main-navigation').collapse('toggle');
+        }
+    });
+        
+    </script>
+   
+   
     <!-- Swipe Carousel on Mobile -->
     <script>
       $('.carousel').bcSwipe({ threshold: 50 });
@@ -482,6 +490,7 @@
 	});
 
 	</script>
+   
    
     <!-- Google Maps Scripts -->
 	<script>

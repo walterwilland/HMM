@@ -162,6 +162,7 @@ a.btn-link:active {
 #mainCarousel .hero h1 {font-size: 45px;}
 #mainCarousel .hero h3 {font-size: 18px;}
 button.btn {width: 100%;}
+#google h3 {font-size: 18px;}
 #directions button.btn{position: static !important;}
 #local {position: static !important;}
 #contact {display: block !important;}
@@ -173,6 +174,7 @@ button.btn {width: 100%;}
 #mainCarousel .hero h3 {font-size: 16px;}
 #portfolio h2 {font-size: 20px !important;}
 button.btn {width: 100%;}
+#google h3 {font-size: 16px;}
 #about h3 {font-size: 13px !important; font-weight: bold;}
 #directions button.btn{position: static !important;}
 #local {position: static !important;}
@@ -283,7 +285,7 @@ i.fa {
 }
 
 
-/******** Portfolio Section ********/
+/******** Youtube Section ********/
 
 #portfolio {
 	padding-top: 60px;
@@ -347,12 +349,12 @@ img {max-width:100%;}
 }
 
 
-/******** Blog Section ********/
+/******** Instagram & Youtube Section ********/
 
 #blog {
 	padding-top: 60px;
-	padding-bottom: 40px;
-	background: #f2f2f2;
+	padding-bottom: 20px;
+	background: #f9f9f9;
 }
 
 #blog h2 {
@@ -378,48 +380,11 @@ img {max-width:100%;}
 #blog img{width: 100%;}
 
 
-/******** Contact Section ********/
-
-#contact {
-	padding-top: 60px;
-	padding-bottom: 40px;
-}
-
-#contact h2 {
-	font-size: 28px;
-	text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Noto Sans', sans-serif;
-	letter-spacing: 1px;
-	font-weight: 600;
-	color: #000;
-	border: 2px solid #42a5f6;
-    display: table;
-    margin: 10px auto;
-    padding: 10px 8px 10px 9px;
-}
-
-#contact p {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 1.063em;
-	color: #000;
-}
-
-#contact a:hover {text-decoration: none;}
-#contact a:visited {text-decoration: none;}
-#contact a:active {text-decoration: none;}
-#contact a:link {text-decoration: none;}
-
-::-webkit-input-placeholder {color: #000;}
-
-
-
 /******** Google Maps Styling ********/
 
 #google {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background-color: #fbfbfb;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .local {
@@ -440,20 +405,20 @@ img {max-width:100%;}
 }
 
 #directions button.btn {
-    margin-top: 15px;
+    margin-top: 20px;
     border-radius: 8px;
     background: #42a5f6;
     outline: none;
+    font-family: 'Noto Sans' sans-serif;
     text-transform: uppercase;
     position: relative;
-    top: -80px;    
+    top: -90px;    
 }
 
 #local {
     position: relative;
     top: -40px;
 }
-
 
 
 /******** Subscribe Section ********/
@@ -479,26 +444,10 @@ img {max-width:100%;}
 	color: #000;
 }
 
-#subscribe .input-group {
-    width: 100%;
-    margin-top: 30px;
-}
-
-#subscribe input.btn.btn-lg,
-input.btn.btn-lg:focus {
-    outline: none;
-    width: 30%;
-    height: 60px;
-    border-radius: 0;
-    border: 1px solid #42a5f6;
-    text-align: center;
-    font-size: 1em;
-    cursor: auto;
-}
-
 #subscribe button.btn {
     height: 60px;
     font-weight: bold;
+    font-family: 'Noto Sans' sans-serif;
     border-radius: 8px;
     background: #42a5f6;
     outline: none;
