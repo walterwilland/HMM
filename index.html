@@ -14,7 +14,7 @@
 	<link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.bmp' /> <!-- change tab icon -->
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.bmp'/> <!-- change tab icon -->
     
 	<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
@@ -38,7 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#mainCarousel">HM<span> Massage</span></a>
+                <a class="navbar-brand" href="#mainCarousel" style="color: #fff;">HM<span> Massage</span></a>
             </div>
 
             <div class="collapse navbar-collapse" id="main-navigation">
@@ -77,19 +77,15 @@
     	.navbar-nav {
     		float: none;
     		text-align: center;
-    		background: rgba(25, 33, 60, 0.5);
-    	}
-    	}
-    	
+    		background: rgba(25, 33, 60, 0.85);
+    	}}
+            	
     	.navbar-default .navbar-brand {
     		margin-top: 0px;
     		font-size: 28px;
     		font-family: 'Roboto Slab', serif;
     		color: #fff;
     		letter-spacing: 1px;
-    		-webkit-transition: all 0.5s ease 0s;
-  			-o-transition: all 0.5s ease 0s;
-  			transition: all 0.5s ease 0s;
     	}
     	
     	.navbar-default .navbar-brand span {
@@ -102,8 +98,7 @@
     	@media screen and (max-width: 400px) {
     	.navbar-default .navbar-brand {
     		font-size: 22px;
-    	}
-    	}
+    	}}
     	
     	.navbar-default .navbar-nav>li>a {
     		color: #fff;
@@ -123,9 +118,7 @@
   			transition: border 0.5s ease-in;
         }
         
-    	.navbar-default .navbar-nav>li>a:hover {
-    		color: deepskyblue;
-    	}
+    	.navbar-default .navbar-nav>li>a:hover {color: deepskyblue;}
     	
     	.navbar-default .navbar-nav>li>a:focus {
     		color: deepskyblue;
@@ -143,7 +136,8 @@
             border: none;
     	}
     	
-		.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		.navbar-default .navbar-toggle:focus, 
+        .navbar-default .navbar-toggle:hover {
 			background: none;
 		}
     	
@@ -154,7 +148,7 @@
 		}
     	
     	.navbar-default.shrink {
-    		background:rgba(25, 33, 60, 0.8)
+    		background:rgba(25, 33, 60, 0.85)
 		}
 		
 		.navbar-default.shrink .navbar-nav {
@@ -162,13 +156,8 @@
 			margin-bottom: 0px;
 		}
 		
-		.navbar-default.shrink .navbar-brand {
-			margin-top: 2px;
-		}
-		
-		.navbar-default.shrink .navbar-toggle {
-			margin-top: 6px;
-		}
+		.navbar-default.shrink .navbar-brand {margin-top: 0px;}
+		.navbar-default.shrink .navbar-toggle {margin-top: 6px;}
     
     </style>
 
@@ -198,7 +187,7 @@
             <div class="item">
 
             <div class="slider_overlay"></div>
-                <div class="fill" style="background-image:url('images/massage3.jpg');">
+                <div class="fill" style="background-image:url('https://image.ibb.co/cJWP7x/massage3.jpg');">
                     <div class="hero">
                         <hgroup>
                             <h1>Downtown Spokane</h1>
@@ -237,7 +226,7 @@
     			<h2>The massage of tomorrow for your health needs today!</h2>
     			<hr>
     			<p style="text-align: center">Hi I'm Spencer! I've been a massage therapist for 5 years and run a massage YouTube channel as well! I truly believe massage/bodywork is an essential form of healthcare and strive towards perfecting my craft and healing any issues that people suffer with. Welcome to HM Massage! </p>
-                <div class="center"><img src="images/spencer1.jpg" class="circle"></div>
+                <div class="center"><img src="https://image.ibb.co/mMC30H/spencer1.jpg" class="circle"></div>
                </div>
 
                 <div class="container" id="accordion" role="tablist" aria-multiselectable="true">
@@ -352,12 +341,8 @@
             </button>
         </div>
     
-        <div id="local" class="container fill" style="background-image: url(images/locale1.jpg); height:200px; margin-top: 20px;"></div>
+        <div id="local" class="container fill" style="background-image: url(https://image.ibb.co/g1AFfH/locale1.jpg); height:200px; margin-top: 20px;"></div>
     </div>
-    
-    <section id="google-map">
-				<div id="map-canvas"></div>
-			</section>
     
     
     <!-- Subscribe -->
@@ -376,10 +361,7 @@
     	</div>
     </div>
     
-	<div class="footer">
-  		<div class="container"></div>
-	</div>
-
+	<div class="footer"><div class="container"></div></div>
 
 
     <!-- jQuery -->
