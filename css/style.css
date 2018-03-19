@@ -3,11 +3,27 @@ html, body {height: 70%;}
 body {overflow-x: hidden;}
 
 #scrollUp {
-  bottom: 20px;
-  right: 20px;
-  width: 38px; /* Width of image */
-  height: 38px; /* Height of image */
-  background: url(../images/top.png) no-repeat;
+  bottom: 0.8em;
+  right: 0.8em;
+  width: 3em; /* Width of image */
+  height: 3em; /* Height of image */
+  font-size: .9em;
+  border-radius: 10em;
+  background-color: rgb(68, 114, 152);
+}
+
+#scrollUp:after {
+  content: '';
+  display: inline-block;
+  margin-top: 1.1em;
+  margin-left: .98em;
+  width: 1.1em;
+  height: 1.1em;
+  border-top: 0.3em solid #fff;
+  border-right: 0.3em solid #fff;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); 
 }
 
 
